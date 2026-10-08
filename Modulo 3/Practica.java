@@ -1,7 +1,10 @@
+import java.util.Locale;
 import java.util.Scanner;
 
 public class Practica {
     public static void main(String[] args) {
+         Locale.setDefault(Locale.US);
+
         // Constante IVA
         final double porcentaje = 0.21;
 
