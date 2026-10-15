@@ -19,7 +19,7 @@
     </Gato>
     <Gato id="005">
         <nombre>Gato Birmano</nombre>
-        <peso>4.7</nombre>
+        <peso>4.7</peso>
     </Gato>
     <destacados/>
 </Propietario>
