@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Propietario id="maximilianoabilahoud">
+<!--Estos son los datos de algunos de los Gatos mas conocidos y queridos-->
+    <Gato id="001">
+        <Nombre>Gato Persa</Nombre>
+        <peso>3.6</peso>
+    </Gato>
+    <Gato id="002">
+        <Nombre>Gato Siamés</Nombre>
+        <peso>4.1</peso>
+    </Gato>
+    <Gato id="003">
+        <Nombre>Gato Maine Coon</Nombre>
+        <peso>2.6</peso>
+    </Gato>
+    <Gato id="004">
+        <nombre>Gato Ragdoll</nombre>
+        <peso>5.0</peso>
+    </Gato>
+    <Gato id="005">
+        <nombre>Gato Birmano</nombre>
+        <peso>4.7</nombre>
+    </Gato>
+    <destacados/>
+</Propietario>
