@@ -37,6 +37,16 @@ Analizando el estado actual de mi archivo `index.html` con respecto a los conten
 3. **Falta de organización en bloques semánticos (`<div>`) y comentarios explicativos**:
    * Gran parte del contenido del cuerpo (`<body>`) se encuentra suelto sin agrupar en bloques o secciones mediante etiquetas `<div>`[cite: 3, 5].
    * Faltan los comentarios explicativos (ej. `<!-- Cabecera -->`, `<!-- Listado de razas -->`) que ayuden a estructurar y leer el árbol del documento antes de añadirle estilos[cite: 3].
+
+   ## Mapa del sitio
+
+| Fichero | Título | Qué contiene |
+| :--- | :--- | :--- |
+| `index.html` | Inicio \| Razas de gatos | Portada: presentación general y bienvenida al sitio web felino. |
+| `razas.html` | Razas \| Razas de gatos | Catálogo detallado de las razas de gatos más populares y conocidas. |
+| `cuidados.html` | Cuidados \| Razas de gatos | Consejos de bienestar, blockquote de opinión y ficha técnica de mantenimiento. |
+| `datosgatos.html` | Datos XML \| Razas de gatos | Listado completo con todos los elementos y pesos extraídos del fichero `datos.xml`. |
+
 ---
 
 ## Estructura del repositorio
