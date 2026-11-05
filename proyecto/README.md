@@ -45,10 +45,14 @@ Analizando el estado actual de mi archivo `index.html` con respecto a los conten
 | `cuidados.html` | Falta de atributo `alt` o espacio en etiquetas preformateadas. | Ajuste de márgenes en la etiqueta `<pre>` y validación limpia de etiquetas. |
 | `razas.html` | Falta de elementos estructurales requeridos (`blockquote` y `<pre>`). | Se agregaron los elementos correspondientes cumpliendo el estándar W3C. |
 
-## Formulario de Contacto
+## UD5 · Tablas y formularios
 
-Se utiliza el método `post` en lugar de `get` para garantizar la privacidad y seguridad de los datos introducidos por el usuario, evitando que información sensible se envíe expuesta a través de la URL.
+### Formulario de Contacto (Reto 3)
 
+Se utiliza el método `post` en lugar de `get` para garantizar la privacidad y seguridad de los datos personales del usuario, evitando que información sensible como el correo o el teléfono viaje expuesta en la barra de direcciones del navegador.
+
+URL generada tras la prueba temporal con el método `get`:
+`http://127.0.0.1:5500/proyecto/contacto.html?nombre=Juan+P%C3%A9rez&correo=juan%40email.com&telefono=600112233&motivo=cuidados&preferencia=email&intereses=alimentacion&mensaje=Consulta+de+prueba+sobre+gatos`
 ---
 
 ## Estructura del repositorio
