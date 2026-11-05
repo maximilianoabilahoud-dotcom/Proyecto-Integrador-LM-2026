@@ -15,7 +15,7 @@ He elegido este tema porque a demas de de que me gustan los gatos, tambien porqu
 ---
 
 ## Palabra del día
-* **Palabra del día:** [meta]
+* **Palabra del día:** [meta, Dia]
 
 ---
 
@@ -44,6 +44,10 @@ Analizando el estado actual de mi archivo `index.html` con respecto a los conten
 | `index.html` | Carácter especial `©` insertado en texto plano. | Se sustituyó por la entidad HTML oficial `&copy;`. |
 | `cuidados.html` | Falta de atributo `alt` o espacio en etiquetas preformateadas. | Ajuste de márgenes en la etiqueta `<pre>` y validación limpia de etiquetas. |
 | `razas.html` | Falta de elementos estructurales requeridos (`blockquote` y `<pre>`). | Se agregaron los elementos correspondientes cumpliendo el estándar W3C. |
+
+## Formulario de Contacto
+
+Se utiliza el método `post` en lugar de `get` para garantizar la privacidad y seguridad de los datos introducidos por el usuario, evitando que información sensible se envíe expuesta a través de la URL.
 
 ---
 
