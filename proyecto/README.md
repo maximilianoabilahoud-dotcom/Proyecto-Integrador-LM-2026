@@ -33,6 +33,7 @@ Analizando el estado actual de mi archivo `index.html` con respecto a los conten
 | `razas.html` | Razas \| Razas de gatos | Catálogo detallado de las razas de gatos más populares y conocidas. |
 | `cuidados.html` | Cuidados \| Razas de gatos | Consejos de bienestar, blockquote de opinión y ficha técnica de mantenimiento. |
 | `datosgatos.html` | Datos XML \| Razas de gatos | Listado completo con todos los elementos y pesos extraídos del fichero `datos.xml`. |
+| `contacto.html` | Contacto \| Razas de gatos | Formulario de contacto y consultas sobre el mundo felino. |
 
 ---
 
@@ -44,6 +45,8 @@ Analizando el estado actual de mi archivo `index.html` con respecto a los conten
 | `index.html` | Carácter especial `©` insertado en texto plano. | Se sustituyó por la entidad HTML oficial `&copy;`. |
 | `cuidados.html` | Falta de atributo `alt` o espacio en etiquetas preformateadas. | Ajuste de márgenes en la etiqueta `<pre>` y validación limpia de etiquetas. |
 | `razas.html` | Falta de elementos estructurales requeridos (`blockquote` y `<pre>`). | Se agregaron los elementos correspondientes cumpliendo el estándar W3C. |
+| `index.html` (UD5) | Warning: el atributo `border="1"` en la etiqueta `<table>` está obsoleto. | Se eliminó el atributo `border="1"` dejando la etiqueta `<table>` limpia para HTML5. |
+| `contacto.html` (UD5) | 0 errores detectados. | Documento validado correctamente a la primera. |
 
 ## UD5 · Tablas y formularios
 
@@ -53,16 +56,28 @@ Se utiliza el método `post` en lugar de `get` para garantizar la privacidad y s
 
 URL generada tras la prueba temporal con el método `get`:
 `http://127.0.0.1:5500/proyecto/contacto.html?nombre=Juan+P%C3%A9rez&correo=juan%40email.com&telefono=600112233&motivo=cuidados&preferencia=email&intereses=alimentacion&mensaje=Consulta+de+prueba+sobre+gatos`
+
+## UD5 · Tablas y formularios
+
+### 1. Resumen del trabajo realizado
+En esta entrega he implementado una tabla de datos completa sobre razas de gatos en `index.html` utilizando la estructura semántica completa (`caption`, `thead`, `tbody`, `tfoot`, `scope` y `colgroup`, combinando `colspan` y `rowspan`). Además, he desarrollado la página `contacto.html` con un formulario temático adaptado a consultas felinas que incluye los 8 tipos de control requeridos, atributos de validación (`required`, `placeholder`, `autofocus`, etc.) y fieldsets estructurados.
+
+### 2. Formulario de Contacto (Reto 3)
+
+Se utiliza el método `post` en lugar de `get` para garantizar la privacidad y seguridad de los datos personales del usuario, evitando que información sensible como el correo o el teléfono viaje expuesta en la barra de direcciones del navegador.
+
+URL generada tras la prueba temporal con el método `get`:
+`http://127.0.0.1:5500/proyecto/contacto.html?nombre=Juan+P%C3%A9rez&correo=juan%40email.com&telefono=600112233&motivo=cuidados&preferencia=email&intereses=alimentacion&mensaje=Consulta+de+prueba+sobre+gatos`
+
 ---
 
-## Estructura del repositorio
-```text
 Proyecto-Integrador-LM-2026/
 └── proyecto/
     ├── index.html
     ├── razas.html
     ├── cuidados.html
     ├── datosgatos.html
+    ├── contacto.html
     ├── datos.xml
     ├── img/
     └── README.md
