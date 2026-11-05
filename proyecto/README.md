@@ -1,21 +1,22 @@
+Markdown
 # Proyecto Integrador - Lenguaje de Marcas (UD1 y UD2)
 
 ## Información del estudiante
-* **Nombre:** [Maximiliano Abilahoud Hidalgo]
-* **Usuario de GitHub:** [maximilianoabilahoud-dotcom]
+* **Nombre:** Maximiliano Abilahoud Hidalgo
+* **Usuario de GitHub:** maximilianoabilahoud-dotcom
 
 ---
 
 ## Tema elegido
-**Tema:** [Razas de gatos]
+**Tema:** Razas de gatos
 
 ### ¿Por qué he elegido este tema?
-He elegido este tema porque a demas de de que me gustan los gatos, tambien porque quiero hacer una pagina web que documente todos los tipos de gatos 
+He elegido este tema porque además de que me gustan los gatos, también porque quiero hacer una página web que documente todos los tipos de gatos.
 
 ---
 
 ## Palabra del día
-* **Palabra del día:** [meta, Dia]
+* **Palabra del día:** meta
 
 ---
 
@@ -42,35 +43,29 @@ Analizando el estado actual de mi archivo `index.html` con respecto a los conten
 | Fichero | Error detectado en W3C | Corrección realizada |
 | :--- | :--- | :--- |
 | `index.html` | Faltaba cerrar un contenedor `<div>` al final del documento. | Se añadió la etiqueta de cierre `</div>` antes del `</body>`. |
-| `index.html` | Carácter especial `©` insertado en texto plano. | Se sustituyó por la entidad HTML oficial `&copy;`. |
+| `index.html` | Carácter especial `©` insertado en texto plano. | Se sustituyó por la entidad HTML oficial `©`. |
 | `cuidados.html` | Falta de atributo `alt` o espacio en etiquetas preformateadas. | Ajuste de márgenes en la etiqueta `<pre>` y validación limpia de etiquetas. |
 | `razas.html` | Falta de elementos estructurales requeridos (`blockquote` y `<pre>`). | Se agregaron los elementos correspondientes cumpliendo el estándar W3C. |
 | `index.html` (UD5) | Warning: el atributo `border="1"` en la etiqueta `<table>` está obsoleto. | Se eliminó el atributo `border="1"` dejando la etiqueta `<table>` limpia para HTML5. |
-| `contacto.html` (UD5) | 0 errores detectados. | Documento validado correctamente a la primera. |
+| `contacto.html` (UD5) | 0 errores detectados[cite: 8]. | Documento validado correctamente a la primera[cite: 8]. |
 
-## UD5 · Tablas y formularios
-
-### Formulario de Contacto (Reto 3)
-
-Se utiliza el método `post` en lugar de `get` para garantizar la privacidad y seguridad de los datos personales del usuario, evitando que información sensible como el correo o el teléfono viaje expuesta en la barra de direcciones del navegador.
-
-URL generada tras la prueba temporal con el método `get`:
-`http://127.0.0.1:5500/proyecto/contacto.html?nombre=Juan+P%C3%A9rez&correo=juan%40email.com&telefono=600112233&motivo=cuidados&preferencia=email&intereses=alimentacion&mensaje=Consulta+de+prueba+sobre+gatos`
+---
 
 ## UD5 · Tablas y formularios
 
 ### 1. Resumen del trabajo realizado
-En esta entrega he implementado una tabla de datos completa sobre razas de gatos en `index.html` utilizando la estructura semántica completa (`caption`, `thead`, `tbody`, `tfoot`, `scope` y `colgroup`, combinando `colspan` y `rowspan`). Además, he desarrollado la página `contacto.html` con un formulario temático adaptado a consultas felinas que incluye los 8 tipos de control requeridos, atributos de validación (`required`, `placeholder`, `autofocus`, etc.) y fieldsets estructurados.
+En esta entrega he implementado una tabla de datos completa sobre razas de gatos en `index.html` utilizando la estructura semántica completa (`caption`, `thead`, `tbody`, `tfoot`, `scope` y `colgroup`, combinando `colspan` y `rowspan`)[cite: 6]. Además, he desarrollado la página `contacto.html` con un formulario temático adaptado a consultas felinas que incluye los 8 tipos de control requeridos, atributos de validación (`required`, `placeholder`, `autofocus`, etc.) y fieldsets estructurados[cite: 2].
 
-### 2. Formulario de Contacto (Reto 3)
-
-Se utiliza el método `post` en lugar de `get` para garantizar la privacidad y seguridad de los datos personales del usuario, evitando que información sensible como el correo o el teléfono viaje expuesta en la barra de direcciones del navegador.
+### 2. Justificación del formulario y prueba con `get`
+Se utiliza el método `post` en lugar de `get` para garantizar la privacidad y seguridad de los datos personales del usuario, evitando que información sensible como el correo o el teléfono viaje expuesta en la barra de direcciones del navegador[cite: 8].
 
 URL generada tras la prueba temporal con el método `get`:
-`http://127.0.0.1:5500/proyecto/contacto.html?nombre=Juan+P%C3%A9rez&correo=juan%40email.com&telefono=600112233&motivo=cuidados&preferencia=email&intereses=alimentacion&mensaje=Consulta+de+prueba+sobre+gatos`
+`[http://127.0.0.1:5500/proyecto/contacto.html?nombre=Juan+P%C3%A9rez&correo=juan%40email.com&telefono=600112233&motivo=cuidados&preferencia=email&intereses=alimentacion&mensaje=Consulta+de+prueba+sobre+gatos](http://127.0.0.1:5500/proyecto/contacto.html?nombre=Juan+P%C3%A9rez&correo=juan%40email.com&telefono=600112233&motivo=cuidados&preferencia=email&intereses=alimentacion&mensaje=Consulta+de+prueba+sobre+gatos)`[cite: 8]
 
 ---
 
+## Estructura del repositorio
+```text
 Proyecto-Integrador-LM-2026/
 └── proyecto/
     ├── index.html
