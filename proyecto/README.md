@@ -70,7 +70,6 @@ URL generada tras la prueba temporal con el método `get`:
 * **Estructura semántica HTML5:** Conversión de `index.html`, `razas.html`, `cuidados.html`, `datosgatos.html` y `contacto.html` usando `<header>`, `<nav>`, `<main>`, `<section>`, `<article>`, `<aside>` y `<footer>`, eliminando `<div>` de maquetación y atributos obsoletos.
 * **Formulario HTML5:** Actualización de `contacto.html` con controles `email`, `tel`, `url`, `date`, `number`, `range` y `color`, validación con `pattern` y `title`, y etiqueta `<meter>`.
 * **Multimedia e interactivos:** Inclusión en `index.html` de `<video>` con dos `<source>`, dos `<figure>` con `<figcaption>` y sección de preguntas frecuentes con `<details>` y `<summary>`.
-* **Estilos CSS:** Creación de `css/estilos.css` enlazado en todas las páginas.
 
 ## Estructura del repositorio
 ```text
@@ -83,4 +82,5 @@ Proyecto-Integrador-LM-2026/
     ├── contacto.html
     ├── datos.xml
     ├── img/
+    ├── media/
     └── README.md
