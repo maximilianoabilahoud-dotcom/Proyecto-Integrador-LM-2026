@@ -11,87 +11,112 @@
 <!-- Maximiliano Abilahoud Hidalgo 05/11/2026 -->
 <body>
     <!-- BLOQUE CABECERA -->
-    <div>
+    <header>
         <h1>Contacto y Consultas Felinas</h1>
         <p>Ponte en contacto con nosotros para resolver tus dudas sobre el mundo de los gatos.</p>
-    </div>
-    <!-- FIN BLOQUE CABECERA -->
+        <nav aria-label="Menú principal">
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="razas.html">Ver las razas</a></li>
+                <li><a href="cuidados.html">Ir a los Cuidados</a></li>
+                <li><a href="datosgatos.html">Ir a los Datos</a></li>
+                <li><a href="contacto.html">Ir al Formulario de Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section>
+            <h2>Formulario de consulta</h2>
+            <form action="#" method="post">
+                <fieldset>
+                    <legend>Tus datos</legend>
 
-    <!-- BLOQUE PRINCIPAL -->
-    <div>
-        <form action="#" method="post">
-            
-            <fieldset>
-                <legend>Tus datos</legend>
+                    <p>
+                        <label for="nombre">Nombre completo:</label>
+                        <input type="text" id="nombre" name="nombre" placeholder="Ej. Juan Pérez" maxlength="50" autofocus required>
+                    </p>
 
-                <div>
-                    <label for="nombre">Nombre completo:</label>
-                    <input type="text" id="nombre" name="nombre" placeholder="Ej. Juan Pérez" maxlength="50" autofocus required>
-                </div>
+                    <p>
+                        <label for="correo">Correo electrónico:</label>
+                        <input type="email" id="correo" name="correo" placeholder="ejemplo@email.com" required>
+                    </p>
 
-                <div>
-                    <label for="correo">Correo electrónico:</label>
-                    <input type="email" id="correo" name="correo" placeholder="ejemplo@email.com" required>
-                </div>
+                    <p>
+                        <label for="telefono">Teléfono de contacto:</label>
+                        <input type="tel" id="telefono" name="telefono" placeholder="600112233" pattern="[0-9]{9}" title="Introduce un teléfono de 9 dígitos sin espacios" required>
+                    </p>
 
-                <div>
-                    <label for="telefono">Teléfono de contacto:</label>
-                    <input type="tel" id="telefono" name="telefono" minlength="9" required>
-                </div>
-            </fieldset>
+                    <p>
+                        <label for="web">Tu web o perfil social sobre gatos (opcional):</label>
+                        <input type="url" id="web" name="web" placeholder="https://tusitio.com">
+                    </p>
 
-            <fieldset>
-                <legend>Tu consulta</legend>
+                    <p>
+                        <label for="cp">Código Postal:</label>
+                        <input type="text" id="cp" name="cp" placeholder="28001" pattern="[0-9]{5}" title="Debe contener exactamente 5 números (ej. 28001)" required>
+                    </p>
+                </fieldset>
 
-                <div>
-                    <label for="motivo">Motivo de la consulta:</label>
-                    <select id="motivo" name="motivo">
-                        <option value="adopcion">Información sobre adopción</option>
-                        <option value="cuidados" selected>Dudas sobre cuidados y salud</option>
-                        <option value="razas">Consulta sobre razas específicas</option>
-                        <option value="otro">Otro motivo</option>
-                    </select>
-                </div>
+                <fieldset>
+                    <legend>Datos de tu gato y consulta</legend>
 
-                <div>
-                    <p>Preferencia de respuesta:</p>
-                    <label for="pref_email">
-                        <input type="radio" id="pref_email" name="preferencia" value="email" checked> Correo electrónico
-                    </label>
-                    <label for="pref_tel">
-                        <input type="radio" id="pref_tel" name="preferencia" value="telefono"> Llamada telefónica
-                    </label>
-                    <label for="pref_whatsapp">
-                        <input type="radio" id="pref_whatsapp" name="preferencia" value="whatsapp"> WhatsApp
-                    </label>
-                </div>
+                    <p>
+                        <label for="fecha_nacimiento">Fecha de nacimiento aproximada del gato:</label>
+                        <input type="date" id="fecha_nacimiento" name="fecha_nacimiento" required>
+                    </p>
 
-                <div>
-                    <p>Temas de interés felino:</p>
-                    <label for="interes_alimentacion">
-                        <input type="checkbox" id="interes_alimentacion" name="intereses" value="alimentacion"> Alimentación y nutrición
-                    </label>
-                    <label for="interes_juguetes">
-                        <input type="checkbox" id="interes_juguetes" name="intereses" value="juguetes"> Juguetes y rascadores
-                    </label>
-                    <label for="interes_veterinaria">
-                        <input type="checkbox" id="interes_veterinaria" name="intereses" value="veterinaria"> Consejos veterinarios
-                    </label>
-                </div>
+                    <p>
+                        <label for="num_gatos">Número de gatos en casa (1 a 15):</label>
+                        <input type="number" id="num_gatos" name="num_gatos" min="1" max="15" step="1" value="1" required>
+                    </p>
 
-                <div>
-                    <label for="mensaje">Mensaje:</label>
-                    <textarea id="mensaje" name="mensaje" rows="5" minlength="10" placeholder="Escribe aquí los detalles de tu consulta sobre gatos..."></textarea>
-                </div>
+                    <p>
+                        <label for="energia">Nivel de energía de tu gato (1 = muy tranquilo, 10 = muy activo):</label>
+                        <input type="range" id="energia" name="energia" min="1" max="10" step="1" value="5">
+                    </p>
 
-                <div>
-                    <button type="submit">Enviar</button>
-                    <button type="reset">Restablecer</button>
-                </div>
-            </fieldset>
+                    <p>
+                        <label for="color_pelaje">Color aproximado del pelaje o collar:</label>
+                        <input type="color" id="color_pelaje" name="color_pelaje" value="#d2691e">
+                    </p>
 
-        </form>
-    </div>
-    <!-- FIN BLOQUE PRINCIPAL -->
+                    <p>
+                        <label for="motivo">Motivo de la consulta:</label>
+                        <select id="motivo" name="motivo">
+                            <option value="adopcion">Información sobre adopción</option>
+                            <option value="cuidados" selected>Dudas sobre cuidados y salud</option>
+                            <option value="razas">Consulta sobre razas específicas</option>
+                            <option value="otro">Otro motivo</option>
+                        </select>
+                    </p>
+
+                    <p>
+                        <label for="mensaje">Mensaje:</label>
+                        <textarea id="mensaje" name="mensaje" rows="5" minlength="10" placeholder="Escribe aquí los detalles de tu consulta sobre gatos..." required></textarea>
+                    </p>
+
+                    <p>
+                        <button type="submit">Enviar</button>
+                        <button type="reset">Restablecer</button>
+                    </p>
+                </fieldset>
+            </form>
+        </section>
+
+        <section>
+            <h2>Estado de atención de consultas</h2>
+            <p>Capacidad actual de respuestas diarias del equipo veterinario:</p>
+            <label for="capacidad">Consultas atendidas hoy (75%):</label>
+            <meter id="capacidad" min="0" max="100" low="30" high="80" optimum="50" value="75">75 de 100</meter>
+        </section>
+    </main>
+    <aside>
+        <h2>Horario de atención</h2>
+        <p>Respondemos de lunes a viernes de 9:00 a 18:00.</p>
+    </aside>
+
+    <footer>
+        <p id="firma-maximilianoabilahoud-dotcom">© 2026 maximilianoabilahoud-dotcom</p>
+    </footer>
 </body>
 </html>
