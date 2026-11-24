@@ -14,39 +14,40 @@
    <!-- NAV: aquí irá el menú (UD4) -->
 
    <!-- Cabecera principal -->
-   <div>
-       <h1>Razas de gatos</h1>
-       <p>Hola, esta en mi pagina sobre el mundo de los felinos</p>
-       <p><a href="datos.xml" target="_blank">Ver datos sobre gatos (XML)</a></p>
-       <p><a href="contacto.html">Ir al Formulario de Contacto</a></p> 
-       <p><a href="cuidados.html">Ir a los Cuidados</a></p>
-       <p><a href="datosgatos.html">Ir a los Datos</a></p>
-       <p><a href="razas.html">Ver las razas</a></p>
-
-   </div>
-
-   <hr>
+  <header>
+        <h1>Razas de gatos</h1>
+        <p>Hola, esta es mi página sobre el mundo de los felinos</p>
+        <nav aria-label="Menú principal">
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="razas.html">Ver las razas</a></li>
+                <li><a href="cuidados.html">Ir a los Cuidados</a></li>
+                <li><a href="datosgatos.html">Ir a los Datos</a></li>
+                <li><a href="contacto.html">Ir al Formulario de Contacto</a></li>
+                <li><a href="datos.xml" target="_blank">Ver datos XML</a></li>
+            </ul>
+        </nav>
+    </header>
 <!--Introduccion a la pagina-->
-   <div>
-      <h2>Introduccion</h2>
-      <p>Los gatos <strong>son animales domesticos muy populares</strong> en todo el mundo. Exixten diversas rezas y tipos de gatos, cada uno con caracteristicas unicas.</p>
-      <img src="img/Imagen_portada.jpg" alt="Imagen de gatos" width="250">
-      <p>A continuación, se presentan algunos de los <b><i>tipos más conocidos:</i></b></p>
-   </div>
+   <main>
+        <section id="introduccion">
+            <h2>Introducción</h2>
+            <p>Los gatos <strong>son animales domésticos muy populares</strong> en todo el mundo. Existen diversas razas y tipos de gatos, cada uno con características únicas.</p>
+            <img src="img/Imagen_portada.jpg" alt="Imagen de gatos" width="250">
+        </section>
 
-   <hr>
-<!--Catalogo de gatos-->
-   <div>
-      <h2>Catalogo de razas</h2>
+        <section id="catalogo">
+            <h2>Catálogo de razas</h2>
 
-      <p>Listado de las razas más destacadas y queridas:</p>
-              <ul>
+            <article>
+                <h3>Razas populares</h3>
+                <p>Listado de las razas más destacadas y queridas:</p>
+                <ul>
                     <li>Gato Persa<br><img src="img/gato_persa.jpg" alt="Gato Persa" width="100"></li>
                     <li>Gato Siamés<br><img src="img/GatoSiames.jpg" alt="Gato Siamés" width="100"></li>
-              </ul>
-        </article>
-
-      <article>
+                </ul>
+            </article>
+            <article>
                 <h3>Otras razas destacadas</h3>
                 <p>Otras opciones de felinos:</p>
                 <ul>
@@ -54,91 +55,125 @@
                     <li>Gato Ragdoll<br><img src="img/GatoRagnoll.jpg" alt="Gato Ragdoll" width="100"></li>
                     <li>Gato Birmano<br><img src="img/GatoBirmano.jpg" alt="Gato Birmano" width="100"></li>
                 </ul>
-        </article>
-</section>
-   <hr>
-<!--Una reseña sobre los gatos-->
-   <div>
-      <h2>Reseña sobre los felinos</h2>
-      <blockquote>
-         <p>"Los gatos poseen la gracia, la elegancia y la independencia que los seres humanos a menudo anhelan en secreto."</p>
-         <p>— <b>Desconocido</b></p>
-      </blockquote>
-   </div>
+            </article>
+        </section>
 
-   <hr>
-<!--Una ficha tecnica sobre datos de los gatos mas conocidos-->
-   <div>
-      <h2>Ficha de los felinos</h2>
-      <p>A continuacion una ficha tecnita de los felinos: </p>
-<!-- Tabla comparativa detallada con las características principales de las razas de gatos, incluyendo origen, peso, esperanza de vida y nivel de energía. -->
-    <table border="1">
-      <caption>Tabla comparativa de características y datos de las razas de gatos</caption>
-      <colgroup>
-        <col span="2" class="col-grupo-principal">
-        <col class="col-grupo-peso">
-        <col class="col-grupo-vida">
-        <col class="col-grupo-energia">
-      </colgroup>
-      <thead>
-        <tr>
-          <th scope="col">Raza</th>
-          <th scope="col">Origen</th>
-          <th scope="col">Peso Medio</th>
-          <th scope="col">Esperanza de vida</th>
-          <th scope="col">Nivel de energía</th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr>
-          <th scope="row">Persa</th>
-          <td rowspan="2">Asia</td>
-          <td>3.5 - 5 kg</td>
-          <td>12 - 17 años</td>
-          <td>Bajo</td>
-        </tr>
-        <tr>
-          <th scope="row">Siamés</th>
-          <td>2.5 - 4 kg</td>
-          <td>15 - 20 años</td>
-          <td>Alto</td>
-        </tr>
-        <tr>
-          <th scope="row">Maine Coon</th>
-          <td>EE.UU.</td>
-          <td>6.0 - 11 kg</td>
-          <td>12 - 15 años</td>
-          <td>Medio</td>
-        </tr>
-        <tr>
-          <th scope="row">Ragdoll</th>
-          <td>EE.UU.</td>
-          <td>4.5 - 9 kg</td>
-          <td>12 - 17 años</td>
-          <td>Bajo</td>
-        </tr>
-        <tr>
-          <th scope="row">Birmano</th>
-          <td>Birmania</td>
-          <td>3.0 - 5.5 kg</td>
-          <td>12 - 16 años</td>
-          <td>Medio</td>
-        </tr>
-      </tbody>
-      <tfoot>
-        <tr>
-          <td colspan="5">Nota: Los datos de peso y esperanza de vida son orientativos y varían según la alimentación y cuidados veterinarios específicos.</td>
-        </tr>
-      </tfoot>
-    </table>
-   </div>
+        <section id="ficha-tecnica">
+            <h2>Ficha de los felinos</h2>
+            <p>A continuación una ficha técnica comparativa:</p>
+            <table>
+                <caption>Tabla comparativa de características y datos de las razas de gatos</caption>
+                <colgroup>
+                    <col span="2" class="col-grupo-principal">
+                    <col class="col-grupo-peso">
+                    <col class="col-grupo-vida">
+                    <col class="col-grupo-energia">
+                </colgroup>
+                <thead>
+                    <tr>
+                        <th scope="col">Raza</th>
+                        <th scope="col">Origen</th>
+                        <th scope="col">Peso Medio</th>
+                        <th scope="col">Esperanza de vida</th>
+                        <th scope="col">Nivel de energía</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <th scope="row">Persa</th>
+                        <td rowspan="2">Asia</td>
+                        <td>3.5 - 5 kg</td>
+                        <td>12 - 17 años</td>
+                        <td>Bajo</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">Siamés</th>
+                        <td>2.5 - 4 kg</td>
+                        <td>15 - 20 años</td>
+                        <td>Alto</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">Maine Coon</th>
+                        <td>EE.UU.</td>
+                        <td>6.0 - 11 kg</td>
+                        <td>12 - 15 años</td>
+                        <td>Medio</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">Ragdoll</th>
+                        <td>EE.UU.</td>
+                        <td>4.5 - 9 kg</td>
+                        <td>12 - 17 años</td>
+                        <td>Bajo</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">Birmano</th>
+                        <td>Birmania</td>
+                        <td>3.0 - 5.5 kg</td>
+                        <td>12 - 16 años</td>
+                        <td>Medio</td>
+                    </tr>
+                </tbody>
+                <tfoot>
+                    <tr>
+                        <td colspan="5">Nota: Los datos de peso y esperanza de vida son orientativos y varían según la alimentación y cuidados veterinarios específicos.</td>
+                    </tr>
+                </tfoot>
+            </table>
+        </section>
 
-<!--Pie de pagina-->
-   <footer>
+        <section id="multimedia">
+            <h2>Galería y Vídeo Felino</h2>
+
+            <figure>
+                <img src="img/gato_persa.jpg" alt="Gato Persa descansando" width="200">
+                <figcaption>Figura 1: Ejemplar de Gato Persa mostrando su característico pelaje largo.</figcaption>
+            </figure>
+
+            <figure>
+                <img src="img/GatoMaineCoon.jpg" alt="Gato Maine Coon mirando a cámara" width="200">
+                <figcaption>Figura 2: Gato Maine Coon, una de las razas domésticas de mayor tamaño.</figcaption>
+            </figure>
+
+            <video controls poster="img/Imagen_portada.jpg" width="400">
+                <source src="media/video_de_gatos.mp4" type="video/mp4">
+                <source src="media/video_de_gatos.mp4" type="video/webm">
+                Tu navegador no soporta la reproducción de vídeo HTML5.
+            </video>
+        </section>
+
+        <section id="faq">
+            <h2>Preguntas Frecuentes (FAQ)</h2>
+
+            <details open>
+                <summary>¿Qué raza de gato es mejor para vivir en un piso pequeño?</summary>
+                <p>Razas tranquilas como el Gato Persa o el Ragdoll se adaptan muy bien a espacios interiores.</p>
+            </details>
+
+            <details>
+                <summary>¿Cómo se estructuran las imágenes en esta web?</summary>
+                <p>Para mostrar imágenes con su descripción semántica utilizamos la etiqueta <figure> junto con <figcaption> dentro del HTML5.</p>
+            </details>
+
+            <details>
+                <summary>¿Dónde puedo consultar los pesos registrados en XML?</summary>
+                <p>Puedes verlos en la sección de <a href="datosgatos.html">Datos XML</a> o abriendo directamente el archivo original.</p>
+            </details>
+        </section>
+    </main>
+
+    <aside>
+        <h2>Reseña sobre los felinos</h2>
+        <blockquote>
+            <p>"Los gatos poseen la gracia, la elegancia y la independencia que los seres humanos a menudo anhelan en secreto."</p>
+            <p>— <strong>Desconocido</strong></p>
+        </blockquote>
+    </aside>
+
+    <footer>
         <p id="firma-maximilianoabilahoud-dotcom">© 2026 maximilianoabilahoud-dotcom</p>
         <p><a href="https://www.purina.es/encuentra-mascota/razas-de-gato" target="_blank">Más información sobre razas de gatos</a></p>
     </footer>
-<!-- /Pie de pagina -->
 
 </body>
 </html>
