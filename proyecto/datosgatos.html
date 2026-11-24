@@ -14,43 +14,54 @@
     <!-- NAV: aquí irá el menú (UD4) -->
 
     <!-- Cabecera de datos XML -->
-    <div>
+    <header>
         <h1>Datos del Registro XML</h1>
-        <p>A continuacion se muestra los datos de los gatos.</p>
-    </div>
+        <p>A continuación se muestran los datos de los gatos.</p>
+        <nav aria-label="Menú principal">
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="razas.html">Ver las razas</a></li>
+                <li><a href="cuidados.html">Ir a los Cuidados</a></li>
+                <li><a href="datosgatos.html">Ir a los Datos</a></li>
+                <li><a href="contacto.html">Ir al Formulario de Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
 
-    <hr>
+    <main>
+        <section>
+            <h2>Listado oficial de felinos (XML)</h2>
+            <p>Estos datos corresponden exactamente a la información sacada en el XML.</p>
 
-    <div>
-        <h2>Listado oficial de felinos (XML)</h2>
-        <p>Estos datos corresponde exactamente a la informacion sacada en el XML.</p>
+            <article>
+                <h3>Gato Persa (ID: 001)</h3>
+                <p>Nombre del registro: Gato Persa. Peso medio registrado: 4.6 kg.</p>
+            </article>
 
-        <div>
-            <h3>Gato Persa (ID: 001)</h3>
-            <p>Nombre del registro: Gato Persa. Peso medio registrado: 4.6 kg.</p>
-        </div>
-        <div>
-            <h3>Gato Siames (ID: 002)</h3>
-            <p>Nombre del registro: Gato Siames. Peso medio registrado:  3.1 kg.</p>
-        </div>
-        <div>
-            <h3>Gato Maine Coon (ID: 003)</h3>
-            <p>Nombre del registro: Gato Maine Coon. Peso medio registrado: 2.4 kg.</p>
-        </div>
-        <div>
-            <h3>Gato Ragdoll (ID: 004)</h3>
-            <p>Nombre del registro: Gato Ragdoll. Peso medio registrado: 8.0 kg.</p>
-        </div>
-        <div>
-            <h3>Gato Birmano (ID: 005)</h3>
-            <p>Nombre del registro: Gato Birmano. Peso medio registrado: 5.7 kg.</p>
-        </div>
-    </div>
+            <article>
+                <h3>Gato Siamés (ID: 002)</h3>
+                <p>Nombre del registro: Gato Siamés. Peso medio registrado: 3.1 kg.</p>
+            </article>
 
-    <hr>
+            <article>
+                <h3>Gato Maine Coon (ID: 003)</h3>
+                <p>Nombre del registro: Gato Maine Coon. Peso medio registrado: 2.4 kg.</p>
+            </article>
 
-    <div>
-        <h2>Ficha de resumen de datos</h2>
+            <article>
+                <h3>Gato Ragdoll (ID: 004)</h3>
+                <p>Nombre del registro: Gato Ragdoll. Peso medio registrado: 8.0 kg.</p>
+            </article>
+
+            <article>
+                <h3>Gato Birmano (ID: 005)</h3>
+                <p>Nombre del registro: Gato Birmano. Peso medio registrado: 5.7 kg.</p>
+            </article>
+            
+        </section>
+
+        <section>
+            <h2>Ficha de resumen de datos</h2>
 <pre>
 ID     Nombre         Peso Registrado
 -------------------------------------
@@ -58,15 +69,13 @@ ID     Nombre         Peso Registrado
 002    Gato Siamés    3.1 kg
 003    Gato Maine Coon 2.4 kg
 </pre>
-    </div>
-
-    <hr>
+        </section>
+    </main>
 
     <!-- Pie de página -->
-    <div>
-        <hr>
-        <p>&copy; 2026 Maximiliano Abilahoud Hidalgo. Todos los derechos reservados.</p>
-     </div>
+    <footer>
+        <p id="firma-maximilianoabilahoud-dotcom">© 2026 maximilianoabilahoud-dotcom</p>
+    </footer>
      <!-- /Pie de página -->
 </body>
 </html>
